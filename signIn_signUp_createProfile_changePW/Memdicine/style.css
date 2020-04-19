@@ -1,0 +1,130 @@
+body {
+    padding: 1em;
+    background: #666;
+    font-family: 'Mitr';
+}
+
+mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    background: white;
+    margin: auto;
+    width: 414px;
+    height: 736px;
+    box-shadow: 0px 12px 24px #0004;
+}
+
+.mobile-container {
+    height: 100%;
+    overflow: auto;
+}
+
+.back {
+    margin-top: 20px;
+    width: 25px;
+}
+
+.cr-profile {
+    margin: 20 0 30 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#Inputfirstname,
+#Inputlastname,
+#Inputage,
+#Inputsex {
+    width: 150px;
+    margin-left: 20px;
+}
+
+#Inputdate,
+#Inputdisease,
+#Inputallergy {
+    width: 355px;
+    margin-left: 20px;
+}
+
+#Inputimage {
+    width: 300px;
+    margin: 0 0 30 20px;
+}
+
+#btn-cr-profile {
+    font-weight: 400;
+    margin: auto;
+    display: block;
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #12D3CF, #67EACA)
+}
+
+#fg {
+    margin-left: 7em;
+    color: black;
+}
+
+#fg:hover {
+    color: #60efd8;
+}
+
+#fb {
+    background-color: #3b5998;
+}
+
+#nav {
+    background: #60efd8;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+.page {
+    padding: 1em;
+    z-index: -1;
+}
+
+#login {
+    background: #60efd8;
+    border-radius: 3em;
+    font-size: 1rem;
+    color: white;
+    width: 70%;
+    margin-left: 2.5em;
+    padding: .3em;
+    box-sizing: border-box;
+    transition: padding .3s;
+}
+
+#login:hover {
+    padding: 1em;
+}
+
+input {
+    width: 100%;
+    border-radius: 3em;
+    font-size: 1rem;
+    padding: .3em;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin-bottom: .1em;
+}
+
+button.set {
+    width: 100%;
+    display: inline-block;
+    margin: 2px;
+}
+
+#title {
+    margin-left: 5em;
+    font-size: 17px;
+}
+
+#title:hover {
+    color: #60efd8;
+}
