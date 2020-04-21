@@ -1,87 +1,143 @@
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
-    <title>profile</title>
     <style>
         body {
+            padding: 1em;
+            background: white;
+            font-family: 'Mitr';
+        }
+        
+        mobile {
             display: flex;
             flex-flow: column nowrap;
-            background-color: #67EACA;
+            background: white;
+            margin: auto;
+            width: 414px;
+            height: 735px;
+            box-shadow: 0px 12px 24px #0004;
+        }
+        
+        .mobile-container {
+            height: 100%;
+        }
+        
+        .back {
+            margin-top: 20px;
+            width: 25px;
+        }
+        
+        .menu {
+            margin-top: 20px;
+            width: 25px;
+            margin-left: 325px;
+        }
+        
+        .cr-profile {
+            margin: 20 0 30 0px;
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        #btn-cr-profile {
+            font-weight: 400;
+            margin: auto;
+            display: block;
+            width: 220px;
+            height: 40px;
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            background-image: linear-gradient(to right, #12D3CF, #67EACA);
         }
         
         .dot {
-            height: 350px;
-            width: 350px;
+            height: 150px;
+            width: 150px;
             background-color: #fff;
             border-radius: 50%;
             display: inline-block;
             margin: auto;
         }
         
-        .user {
-            text-align: center;
-            font-size: 75px;
-            color: #fff;
+        .top {
+            background-image: linear-gradient(to right, #12D3CF, #67EACA);
+            height: 50%;
+            width: 100%;
         }
         
         .bottom {
             background-color: #fff;
-            border-radius: 10px;
-            height: 60em;
         }
         
         .prof {
             text-align: left;
-            font-size: 50px;
+            font-size: 20px;
             color: #12D3CE;
         }
-        
-        .btn {
-            width: 400px;
-            border-radius: 20px;
-            background-color: #12D3CF;
-            color: #ffffff;
-            font-size: 50px;
-            position: absolute;
-            left: 30%;
-            bottom: 8%;
-        }
-        
-        img {
-            width: 25px;
-        }
     </style>
+
+    <body>
+        <mobile>
+            <div class='mobile-container'>
+                <div>
+                    <form>
+                        <div class="container top">
+                            <img src="img/back.png" class="back">
+                            <img src="img/menu.png" class="menu">
+                            <div style="text-align:center">
+                                <span class="dot"></span>
+                            </div>
+                            <h1 class="cr-profile">USER NAME</h1>
+                            <div class="row mt-4 bottom">
+                                <div class="col-12 mt-2">
+                                    <div class="form-group">
+                                        <p class="prof">ชื่อ - นามสกุล</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="form-group">
+                                        <p class="prof">อายุ</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="form-group">
+                                        <p class="prof">เพศ</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="form-group">
+                                        <p class="prof">วัน/เดือน/ปี เกิด</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="form-group">
+                                        <p class="prof">โรคประจำตัว</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="form-group">
+                                        <p class="prof">อาหารหรือยาที่แพ้</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn mt-3" id="btn-cr-profile">แก้ไขโปรไฟล์</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </mobile>
+    </body>
 </head>
-
-<body>
-    <div class="top">
-        <span class="d-inline-block">
-            <p class="m-3 font-weight-bold"><img src="img/back70.png"></p>
-         </span>
-        <br>
-        <div style="text-align:center">
-            <span class="dot"></span>
-        </div>
-        <p class="user mt-5">USER NAME</p>
-    </div>
-    <div class="bottom m-5">
-        <div>
-            <p class="prof m-5">ชื่อ - นามสกุล</p>
-            <p class="prof m-5">อายุ</p>
-            <p class="prof m-5">เพศ</p>
-            <p class="prof m-5">วัน/เดือน/ปี เกิด</p>
-            <p class="prof m-5">โรคประจำตัว</p>
-            <p class="prof m-5">อาหารหรือยาที่แพ้</p>
-        </div>
-        <br>
-        <div class="container-fluid m-5" style="text-align: center;">
-            <button type="button" class="btn p-3">แก้ไขโปรไฟล์</button>
-        </div>
-    </div>
-
-</body>
 
 </html>
