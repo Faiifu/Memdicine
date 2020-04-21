@@ -1,0 +1,118 @@
+body {
+    padding: 1em;
+    background: #666;
+    font-family: 'Mitr';
+}
+
+#bg {
+    background-color: #60efd8;
+    height: 35%;
+}
+
+mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    background: white;
+    margin: auto;
+    width: 414px;
+    height: 736px;
+    box-shadow: 0px 12px 24px #0004;
+}
+
+.mobile-container {
+    height: 100%;
+    overflow: auto;
+}
+
+.cr-profile {
+    margin: 20 0 30 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#InputEmail {
+    border-radius: 3em;
+}
+
+.user-img {
+    width: 37px;
+    position: absolute;
+    margin-left: -120px;
+    margin-top: -37px;
+}
+
+
+/* #btn-cr-profile {
+    font-weight: 400;
+    margin: auto;
+    display: block;
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #12D3CF, #67EACA)
+} */
+
+a {
+    text-decoration: none !important;
+}
+
+#fb {
+    background-color: #3b5998;
+}
+
+#login {
+    background-image: linear-gradient(to right, #12D3CF, #67EACA);
+    border: 5em;
+    border-radius: 3em;
+    color: white;
+    width: 80%;
+    padding: .3em;
+    box-sizing: border-box;
+    transition: width .3s;
+}
+
+#login:hover {
+    width: 100%;
+}
+
+#facebookLogin {
+    background-color: #3b5998;
+    border: 5em;
+    border-radius: 3em;
+    color: white;
+    width: 80%;
+    padding: .3em;
+    box-sizing: border-box;
+    transition: width .3s;
+}
+
+#facebookLogin:hover {
+    width: 100%;
+}
+
+.fb-img {
+    width: 37px;
+    height: 30px;
+    position: absolute;
+    margin-left: -37px;
+    margin-top: -3px;
+}
+
+input {
+    width: 100%;
+    border-radius: 3em;
+    font-size: 1rem;
+    padding: .3em;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin-bottom: .1em;
+}
+
+button.set {
+    width: 100%;
+    display: inline-block;
+    margin: 2px;
+}
