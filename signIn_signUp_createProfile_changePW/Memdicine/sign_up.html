@@ -4,64 +4,14 @@
     <title>Sign_up_Jaaaaaaaa</title>
     <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-    <body>
-        <mobile>
-            <div class='mobile-container'>
-                <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png" style="height:30px;width:30px;margin-top: 20px;margin-left: 20px;">
-                <h2 style="font-family: 'Mitr', sans-serif;font-size: 40px;text-align:center;margin-top: 5px;margin-bottom: 10px;font-weight: 100;">SIGN UP</h2>
-                <form>
-                    <div class="container">
-                        <div class="row row-cols-2">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label style="font-family: 'Mitr', sans-serif;margin-left: 40px;margin-top: auto;color: #12D3CF;font-size: 20px;">Username</label><br>
-                                    <input type="text" name="userName" style="height: 50px;width: 315px;border-radius: 20px;margin-left: 50px;margin-top: 10px;margin-bottom:13px;border: 1px solid #707070;padding-left: 20px;font-size: 15px" placeholder="Enter Username" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label style="font-family: 'Mitr', sans-serif;margin-left: 40px;margin-top: auto;color: #12D3CF;font-size: 20px;">E-mail</label><br>
-                                    <input type="text" name="Email" style="height: 50px;width: 315px;border-radius: 20px;margin-left: 50px;margin-top: 10px;margin-bottom:13px;border: 1px solid #707070;padding-left: 20px;font-size: 15px;" placeholder="Enter E-mail address" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label style="font-family: 'Mitr', sans-serif;margin-left: 40px;margin-top: auto;color: #12D3CF;font-size: 20px;">Mobile number</label><br>
-                                    <input type="text" name="MobileNum" style="height: 50px;width: 315px;border-radius: 20px;margin-left: 50px;margin-top: 10px;margin-bottom:13px;border: 1px solid #707070;padding-left: 20px;font-size: 15px" placeholder="Enter your Mobile number" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-10">
-                                <div class="form-group">
-                                    <label style="font-family: 'Mitr', sans-serif;margin-left: 40px;margin-top: auto;color: #12D3CF;font-size: 20px;">Password</label><br>
-                                    <input type="password" name="Pass" style="height: 50px;width: 315px;border-radius: 20px;margin-left: 50px;margin-top: 10px;margin-bottom:13px;border: 1px solid #707070;padding-left: 20px;font-size: 15px" placeholder="8-10 Character minimum" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-10">
-                                <div class="form-group">
-                                    <label style="font-family: 'Mitr', sans-serif;margin-left: 40px;margin-top: auto;color: #12D3CF;font-size: 20px;">Confirm Password</label><br>
-                                    <input type="password" name="confirmPW" style="height: 50px;width: 315px;border-radius: 20px;margin-left: 50px;margin-top: 10px;margin-bottom:18px;border: 1px solid #707070;padding-left: 20px;font-size: 15px" placeholder="Confirm your password" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="submit" value="CREATE ACCOUNT" style="height:50px;width: 340px;position: relative;left: 9.15%;border-radius: 20px;background-color: #12D3CF;color: white;font-family: 'Mitr', sans-serif;font-size: 18px;font-weight: lighter;border: 0.5px solid white;margin-top: 5px;">
-                </form>
-
-            </div>
-        </mobile>
-    </body>
-</head>
-
-</html>
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
     body {
-        /*padding: 1em;*/
+        padding: 0em;
         background: #666;
         font-family: sans-serif;
     }
@@ -78,7 +28,82 @@
     
     .mobile-container {
         height: 100%;
+        width: 100%;
         overflow: auto;
     }
 
 </style>
+
+    <body>
+        <mobile>
+            <div class='mobile-container'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12" style="width: 414px;height: 50px;">
+                            <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_402-512.png" style="height:30px;width:30px;margin-top: 20px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" style="margin-bottom: 10px;">
+                            <h2 style="font-family: 'Mitr', sans-serif;font-size: 40px;text-align:center;margin-top: 5px;margin-bottom: 10px;font-weight: 90px;">SIGN UP</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-left: 45px;">
+                            <label style="color: #12D3CF;">Username</label>
+                            <br>
+                            <input type="text" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:90%;text-align: left;padding-left: 60px;" placeholder="Enter Username">
+                            <img src="../Memdicine/img/user.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -325px;">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-left: 45px;">
+                            <label style="color: #12D3CF;">E-mail</label>
+                            <br>
+                            <input type="text" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:90%;text-align: left;padding-left: 60px;" placeholder="Enter E-mail address">
+                            <img src="../Memdicine/img/email.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -325px;">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-left: 45px;">
+                            <label style="color: #12D3CF;">Mobile-number</label>
+                            <br>
+                            <input type="text" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:90%;text-align: left;padding-left: 60px;" placeholder="Enter your Mobile Number">
+                            <img src="../Memdicine/img/smartphone-call.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -325px;">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-left: 45px;">
+                            <label style="color: #12D3CF;">Password</label>
+                            <br>
+                            <input type="password" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:90%;text-align: left;padding-left: 60px;" placeholder="8-10 Character minimum">
+                            <img src="../Memdicine/img/password.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -325px;">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-left: 45px;">
+                            <label style="color: #12D3CF;">Confirm Password</label>
+                            <br>
+                            <input type="password" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:90%;text-align: left;padding-left: 60px;" placeholder="Confirm your password">
+                            <img src="../Memdicine/img/password.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -325px;">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-left: 20px;">
+                            <button type="submit" form="form1" value="Submit" style="width: 100%;height: 50px;margin-top: 20px;border-radius: 40px;border:0.2px solid #070707;color:white;background-color:#12D3CF;font-size: 18px ">CRETE ACCOUNT</button>
+                        </div>
+                    </div>
+                
+
+            </div>
+        </mobile>
+    </body>
+</head>
+
+</html>
