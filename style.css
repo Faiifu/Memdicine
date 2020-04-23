@@ -198,8 +198,14 @@ input {
     background-color: plum;
 }
 
-.back-menu {
+.home-img {
     width: 30px;
+    margin: 15 0 0 355px;
+}
+
+.back-menu {
+    width: 20px;
+    margin-top: 5px;
 }
 
 .middle-text {
