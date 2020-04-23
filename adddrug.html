@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <body>
+        <mobile>
+            <div class='mobile-container'>
+                <nav id="nav-bar">
+                    <img src="img/back.png" class="back-main">
+                    <h3 id="add-drug">เพิ่มรายการยา</h3>
+                    <img src="img/menu.png" class="menu-main">
+                </nav>
+                <div class="container">
+                    <br>
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputName" class="col-sm-3 col-form-label">ชื่อยา</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="name-add">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="inputCategory">ประเภทยา</label>
+                            <select class="col-sm-5" id="inputCategory" class="form-control">
+                                <option selected>Choose</option>
+                                <option>ยาแผนโบราณ</option>
+                                <option>ยาแผนปัจจุบัน</option>
+                                <option>ยาสามัญประจำบ้าน</option>
+                                <option>ยาสมุนไพร</option>
+                                <option>ยาบำรุงร่างกาย</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="inputType">ชนิดยา</label>
+                            <select class="col-sm-5" id="inputType" class="form-control">
+                                <option selected>Choose</option>
+                                <option>ยาเม็ด</option>
+                                <option>ยาน้ำ</option>
+                                <option>แคปซูล</option>
+                                <option>ยาพ่น</option>
+                                <option>ยาหยอด</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputstart" class="col-sm-5 col-form-label">วันที่เริ่มรับประทานยา</label>
+                            <div class="col-sm-7">
+                                <input type="date" class="form-control" id="date-add">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputnum" class="col-sm-6 col-form-label">จำนวนยาที่ต้องรับประทาน</label>
+                            <div class="col-sm-3">
+                                <input type="number" class="form-control" id="num-add">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="inputTime">ความถี่</label>
+                            <select class="col-sm-5 js-my-select" id="inputTime" class="form-control">
+                                <option selected>Choose</option>
+                                <option value="day-1">วันละครั้ง</option>
+                                <option value="day-2">วันละ 2 ครั้ง</option>
+                                <option value="day-3">วันละ 3 ครั้ง</option>
+                                <option value="day-4">วันละ 4 ครั้ง</option>
+                                <option value="day-5">วันละ 5 ครั้ง</option>
+                                <option value="day-6">วันละ 6 ครั้ง</option>
+                                <option value="day-7">วันละ 7 ครั้ง</option>
+                                <option value="day-8">วันละ 8 ครั้ง</option>
+                                <option value="day-9">วันละ 9 ครั้ง</option>
+                                <option value="day-10">วันละ 10 ครั้ง</option>
+                                <option value="day-11">วันละ 11 ครั้ง</option>
+                                <option value="day-12">วันละ 12 ครั้ง</option>
+                                <option value="hour-1">ทุกชั่วโมง</option>
+                                <option value="hour-2">ทุก 2 ชั่วโมง</option>
+                                <option value="hour-3">ทุก 3 ชั่วโมง</option>
+                                <option value="hour-4">ทุก 4 ชั่วโมง</option>
+                                <option value="hour-5">ทุก 5 ชั่วโมง</option>
+                                <option value="hour-6">ทุก 6 ชั่วโมง</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="inputTime">ช่วงเวลา</label>
+                            <select class="col-sm-5 js-my-select" id="inputTime" class="form-control">
+                                <option selected>Choose</option>
+                                <option value="day-1">ก่อนอาหาร 15 นาที</option>
+                                <option value="day-2">รับประทานทันที</option>
+                                <option value="day-3">หลังอาหาร 15 นาที</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputnum" class="col-sm-3 col-form-label">ครั้งละ</label>
+                            <div class="col-sm-3">
+                                <input type="number" class="form-control" id="num-add">
+                            </div>
+                            <label class="col-sm-3 col-form-label">เม็ด</label>
+                            <button type="button" class="btn" id="btn-adddrug">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+        </mobile>
+    </body>
+</head>
+
+</html>

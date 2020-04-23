@@ -1,7 +1,6 @@
 body {
     padding: 1em;
     background: #666;
-    font-family: 'Mitr', sans-serif;
 }
 
 mobile {
@@ -12,6 +11,7 @@ mobile {
     width: 414px;
     height: 735px;
     box-shadow: 0px 12px 24px #0004;
+    font-family: 'Mitr', sans-serif;
 }
 
 .mobile-container {
@@ -169,7 +169,8 @@ input {
     margin-top: 30px;
 }
 
-#btn-profile {
+#btn-profile,
+#btn-adddrug {
     font-weight: 400;
     margin: auto;
     display: block;
@@ -220,7 +221,11 @@ input {
 
 .img-account {
     width: 30px;
-    margin: 15 20 10 20px;
+    margin: 22 20 10 20px;
+}
+
+h6 {
+    font-weight: 400;
 }
 
 
@@ -260,7 +265,7 @@ a {
 }
 
 #fg {
-    font-weight: 600;
+    font-weight: 200;
     color: #12D3CF;
     margin-left: 11em;
     margin-top: -12;
@@ -384,4 +389,96 @@ button.set {
     font-size: 20px;
     text-align: center;
     background-image: linear-gradient(to right, #12D3CF, #67EACA)
+}
+
+
+/* home */
+
+#home-text {
+    position: absolute;
+    color: white;
+    margin-top: -29px;
+    margin-left: 160px;
+}
+
+#btn-add {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(to right, #12D3CF, #67EACA);
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20 30 30 350px;
+}
+
+.pluss {
+    margin-top: -10px;
+}
+
+#drugs {
+    width: 360px;
+    margin: auto;
+    display: block;
+    border: 2px solid #12D3CF;
+    border-radius: 10px;
+}
+
+#name-drug {
+    font-size: 20px;
+    margin: 0 0 0 10px;
+}
+
+.about-drug {
+    margin: 0 0 0 40px;
+    color: black;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: black;
+    margin: 6 0 0 175px;
+    width: 20px;
+}
+
+.nav-link:hover {
+    color: #12D3CF;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.switch {
+    float: right;
+}
+
+
+/* add-drug */
+
+#add-drug {
+    position: absolute;
+    color: white;
+    margin-top: -29px;
+    margin-left: 120px;
+}
+
+#inputCategory,
+#inputType,
+#inputTime {
+    color: #707070;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+#name-add,
+#date-add,
+#num-add {
+    color: #707070;
+    font-size: 14px;
 }
