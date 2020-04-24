@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+
     <body>
         <mobile>
             <div class='mobile-container'>
@@ -59,45 +60,42 @@
                                 <input type="number" class="form-control" id="num-add">
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label" for="inputTime">ความถี่</label>
-                            <select class="col-sm-5 js-my-select" id="inputTime" class="form-control">
-                                <option selected>Choose</option>
-                                <option value="day-1">วันละครั้ง</option>
-                                <option value="day-2">วันละ 2 ครั้ง</option>
-                                <option value="day-3">วันละ 3 ครั้ง</option>
-                                <option value="day-4">วันละ 4 ครั้ง</option>
-                                <option value="day-5">วันละ 5 ครั้ง</option>
-                                <option value="day-6">วันละ 6 ครั้ง</option>
-                                <option value="day-7">วันละ 7 ครั้ง</option>
-                                <option value="day-8">วันละ 8 ครั้ง</option>
-                                <option value="day-9">วันละ 9 ครั้ง</option>
-                                <option value="day-10">วันละ 10 ครั้ง</option>
-                                <option value="day-11">วันละ 11 ครั้ง</option>
-                                <option value="day-12">วันละ 12 ครั้ง</option>
-                                <option value="hour-1">ทุกชั่วโมง</option>
-                                <option value="hour-2">ทุก 2 ชั่วโมง</option>
-                                <option value="hour-3">ทุก 3 ชั่วโมง</option>
-                                <option value="hour-4">ทุก 4 ชั่วโมง</option>
-                                <option value="hour-5">ทุก 5 ชั่วโมง</option>
-                                <option value="hour-6">ทุก 6 ชั่วโมง</option>
-                            </select>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label" for="inputTime">ช่วงเวลา</label>
-                            <select class="col-sm-5 js-my-select" id="inputTime" class="form-control">
-                                <option selected>Choose</option>
-                                <option value="day-1">ก่อนอาหาร 15 นาที</option>
-                                <option value="day-2">รับประทานทันที</option>
-                                <option value="day-3">หลังอาหาร 15 นาที</option>
-                            </select>
-                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="" style="margin-right: 10px;">เช้า</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="" style="margin-right: 5px;">กลางวัน</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value=""  style="margin-right: 10px;">เย็น</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="checkbox">
+                                    <label style="margin-left: -10px;"><input type="checkbox" value="" style="margin-right: 5px;">ก่อนนอน</label>
+                                </div>
+                            </div>
+                        </div>                        
                         <div class="form-group row">
                             <label for="inputnum" class="col-sm-3 col-form-label">ครั้งละ</label>
                             <div class="col-sm-3">
                                 <input type="number" class="form-control" id="num-add">
                             </div>
                             <label class="col-sm-3 col-form-label">เม็ด</label>
+                        </div>
+                            
+                        <div class="form-group row">
+                            <label for="inputName" class="col-sm-3 col-form-label">ชื่อผู้ทาน</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="nameEat-add" style="width: 150%;">
+                            </div>
+                        </div>    
                             <button type="button" class="btn" id="btn-adddrug">SUBMIT</button>
                         </div>
                     </form>
