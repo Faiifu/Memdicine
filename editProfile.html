@@ -1,117 +1,88 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <style>
-    	body {
-    padding: 0em;
-    background: #666;
-    font-family: sans-serif;
-}
-
-mobile {
-    display: flex;
-    flex-flow: column nowrap;
-    background: white;
-    margin: auto;
-    width: 414px;
-    height: 736px;
-    box-shadow: 0px 12px 24px #0004;
-}
-
-.mobile-container {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-}
-    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <body>
         <mobile>
             <div class='mobile-container'>
-            	<div class="container-fluid">
-            		<div class="row">
-            			<div class="col-sm-12" style="background-color:#12D3CF;height: 60px;width: 414px;">
-                            <img src="../Memdicine/img/back.png" style="width:25px;height:25px;margin-top: -7px;">
-                            <label style="color:white;font-size: 20px;margin-left: 100px;padding-top: 15px;">แก้ไขโปรไฟล์</label>
-                            <img src="../Memdicine/img/menu.png" style="width:28px;height:28px;margin-top: -5px;margin-left: 90px;">
-            			</div>
-            		</div>
-            		<br>
-            		<div class="row row-cols-2">
-            			<div class="col-sm-6" style="padding-left: 35px;">
-                            <div class="form-group">
-                                <label style="color: #12D3CF;">Firstname</label>
-                            <br>
-            				<input type="text" style="border-radius: 40px;border: 1px solid #707070; width: 170px;height: 45px;text-align: center;" placeholder="Firstname">
-                            <img src="../Memdicine/img/user.png" style="width: 45px;height: 45px;margin-top: -45px;margin-left: -2px;"></div>
-            			</div>
-            			<div class="col-sm-6">
-                            <div class="form-group">
-            				<label style="color: #12D3CF;">Lastname</label>
-                            <br>
-                            <input type="text" style="border-radius: 40px;border: 1px solid #707070; width: 170px;height: 45px;text-align: left;padding-left: 20px;" placeholder="Lastname"></div>
-            			</div>
-                    </div>
-                    <br>
-                    <div class="row row-cols-2">
-                        <div class="col-sm-6" style="padding-left: 35px;">
-                            <div class="form-group" style="margin-top: -25px;">
-                                <label style="color: #12D3CF;">Age</label>
-                            <br>
-                            <input type="text" style="border-radius: 40px;border: 1px solid #707070; width: 140px;height: 45px;text-align: center;">
-                            <img src="../Memdicine/img/user1.png" style="width: 45px;height: 45px;margin-top: -45px;margin-left: -2px;"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group" style="margin-top: -25px;border-color: #707070">
-                            <label style="color: #12D3CF;">Sex</label>
-                            <br>
-                            <select id="sex" name="sex" style="width: 150px;height: 45px;border-radius: 40px;text-align: left;padding-left: 15px;">
-                                <option value="blank">Please Choose
-                                </option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select></div>
-                        </div>
-                    </div>
-                    <div class="row">
-            			<div class="col-sm-12" style="padding-left: 35px;">
-            				<label style="color: #12D3CF;">Date of Birth</label>
-                            <br>
-                            <input type="text" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:95%;text-align: left;padding-left: 60px;" placeholder="dd/mm/yy">
-                            <img src="../Memdicine/img/gift.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -353px;">
-            			</div>
-            			<div class="col-sm-12" style="padding-left: 35px;margin-top: 10px;">
-            				<label style="color: #12D3CF;">Congenital disease</label>
-                            <br>
-                            <input type="text" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:95%;text-align: left;padding-left: 60px;" placeholder="ภูมิแพ้">
-                            <img src="../Memdicine/img/drugs.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -353px;">
-            			</div>
-                        <div class="col-sm-12" style="padding-left: 35px;margin-top: 10px;">
-            				<label style="color: #12D3CF;">Food allergy / Drug allergy</label>
-                            <br>
-                            <input type="text" style="border-radius: 40px;border: 1px solid #707070;height: 45px;width:95%;text-align: left;padding-left: 60px;" placeholder="ข้าวเกรียบ">
-                            <img src="../Memdicine/img/fork.png" style="width: 45px;height: 45px;margin-top: -4px;margin-left: -353px;">
-            			</div>
-                        <br>
-            			<div class="col-sm-12" style="padding-left: 40px;margin-top: 10px;">
-                            
-            				<div class="input-group mb-3" style="margin-top: 5px;">
-                                <label for="Inputimage">Choose image</label>
-                                <input type="file" id="Inputimage" class="form-control-file" style="width: 300px;margin: 0 0 30 5px;">
+                <div id="create-profile"></div>
+                <form>
+                    <div class="container">
+                        <a href="sign-up.html"><img src="img/back70.png" class="back"></a>
+                        <h1 class="cr-profile">CREATE PROFILE</h1>
+                        <div class="row row-cols-2 firstname">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="Inputfirstname">Firstname</label>
+                                    <input type="text" class="form-control" id="Inputfirstname">
+                                    <img class="user-img" src="img/user.png">
+                                </div>
                             </div>
-            			</div>
-            			<div class="col-sm-12">
-            				<button type="submit" form="form1" value="Submit" style="width: 100%;height: 50px;margin-top: -10px;border-radius: 40px;border:0.2px solid #070707;color:white;background-color:#12D3CF;font-size: 18px ">Submit</button>
-            			</div>
-            		</div>
-                </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="Inputlastname">Lastname</label>
+                                    <input type="text" class="form-control" id="Inputlastname">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="Inputage">Age</label>
+                                    <input type="text" class="form-control" id="Inputage">
+                                    <img class="user1-img" src="img/user1.png">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="Inputsex">Sex</label>
+                                    <select id="Inputsex" class="form-control">
+                                      <option value="1">Male</option>
+                                      <option value="2">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="Inputdate">Date of Birth</label>
+                                    <input type="date" id="Inputdate" class="form-control">
+                                    <img class="gift-img" src="img/gift.png">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="Inputdisease">Congenital disease</label>
+                                    <input type="text" id="Inputdisease" class="form-control">
+                                    <img class="drugs-img" src="img/drugs.png">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="Inputallergy">Food allergy / Drug allergy</label>
+                                    <input type="text" id="Inputallergy" class="form-control">
+                                    <img class="fork-img" src="img/fork.png">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="Inputimage">Choose image</label>
+                                    <input type="file" id="Inputimage" class="form-control-file">
+                                </div>
+                            </div>
+                            <a href="profile.html"><button  type="button" class="btn" id="btn-cr-profile">SUBMIT</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </mobile>
     </body>
 </head>

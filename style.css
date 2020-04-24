@@ -1,5 +1,5 @@
 body {
-    padding: 0em;
+    padding: 1em;
     background: #666;
 }
 
@@ -486,5 +486,58 @@ a {
 #date-add,
 #num-add {
     color: #707070;
+    font-size: 14px;
+}
+
+
+/* profileOther */
+
+.bin-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 185px;
+}
+
+
+/* addother */
+
+
+/* forgotPW */
+
+.cr-forgot {
+    margin: 20 0 30 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#Inputemail-forgot {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10%;
+    border-radius: 1rem;
+}
+
+.emailforgot-img {
+    width: 37px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -38px;
+}
+
+#btn-cr-forgot {
+    font-weight: 400;
+    margin-left: 45px;
+    margin-top: 5%;
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #12D3CF, #67EACA)
+}
+
+.password-forgot {
+    margin-top: 10px;
     font-size: 14px;
 }
