@@ -551,3 +551,32 @@ a {
     margin-top: -29px;
     margin-left: 140px;
 }
+
+
+/* other */
+
+#other {
+    width: 165px;
+    height: 200px;
+    border: 2px solid #12D3CF;
+    border-radius: 10px;
+}
+
+#name-other {
+    font-size: 20px;
+    margin: 0 0 0 65px;
+}
+
+.profile-other {
+    height: 110px;
+    width: 130px;
+    background-color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+}
