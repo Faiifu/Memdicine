@@ -340,7 +340,6 @@ mobile {
 .dialog {
     z-index: 5;
     position: absolute;
-    margin-top: 115%;
     margin-left: 5%;
     width: 350px;
     height: 60px;
