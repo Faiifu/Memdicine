@@ -435,6 +435,11 @@ button.set {
     margin: 0 0 0 10px;
 }
 
+#balance {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
 .about-drug {
     margin: 0 0 0 40px;
     color: black;
@@ -462,6 +467,31 @@ a {
 
 .switch {
     float: right;
+}
+
+
+/* home2 */
+
+.name-h2 {
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+#list-time {
+    margin-left: 40px;
+}
+
+.list-text {
+    margin-top: 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.checkbox {
+    margin-top: 25px;
 }
 
 
@@ -572,4 +602,62 @@ a {
 .gosignin {
     font-size: 13px;
     color: #12D3CF;
+}
+
+
+/* event */
+
+#event-text {
+    position: absolute;
+    color: white;
+    margin-top: -30px;
+    margin-left: 150px;
+}
+
+#Inputdate-event {
+    margin-left: 40px;
+}
+
+#btn-event {
+    font-weight: 400;
+    margin-left: 140px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-image: linear-gradient(to right, #12D3CF, #67EACA)
+}
+
+.delete-event {
+    width: 20px;
+    margin-left: 250px;
+    margin-bottom: -10px;
+}
+
+
+/* history */
+
+#history-text {
+    position: absolute;
+    color: white;
+    margin-top: -30px;
+    margin-left: 120px;
+}
+
+#Inputdate-history {
+    margin-left: 18px;
+}
+
+#pr-list {
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+#pr-list-history {
+    font-size: 14px;
+    margin-left: 35px;
+    padding: 0;
 }
