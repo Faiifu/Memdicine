@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+    <mobile>
+        <div class='mobile-container'>
+            <nav id="nav-bar">
+                <img src="img/back.png" class="back-main">
+                <h3 id="report-text">การประเมินผล</h3>
+                <img src="img/menu.png" class="menu-main">
+            </nav>
+            <br>
+            <div class="container">
+                <div class="row row-cols-2 firstname">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>ปี</label>
+                            <select name="Year" id="Year" class="form-control">
+                                <option value="2563">2563</option>
+                                <option value="2564">2564</option>
+                                <option value="2565">2565</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label>เดือน</label>
+                            <select name="Mount" id="Mount" class="form-control">
+                                <option value="1">มกราคม</option>
+                                <option value="2">กุมภาพันธ์</option>
+                                <option value="3">มีนาคม</option>
+                                <option value="4">เมษายน</option>
+                                <option value="5">พฤษภาคม</option>
+                                <option value="6">มิถุนายน</option>
+                                <option value="7">กรกฎาคม</option>
+                                <option value="8">สิงหาคม</option>
+                                <option value="9">กันยายน</option>
+                                <option value="10">ตุลาคม</option>
+                                <option value="11">พฤศจิกายน</option>
+                                <option value="12">ธันวาคม</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <canvas id="bar-chart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </mobile>
+</body>
+
+<script>
+    var ctx = document.getElementById("bar-chart").getContext("2d");
+    var colorHex = ["#D8EDFF", "#D2FED8", "#FFFCD6", "#FEDAFF"];
+    var myNewChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["สัปดาห์ที่ 1", "สัปดาห์ที่ 2", "สัปดาห์ที่ 3", "สัปดาห์ที่ 4"],
+            datasets: [{
+                data: [60, 80, 60, 50],
+                borderColor: colorHex,
+                backgroundColor: ["rgba(216, 237, 255, 0.6)", "rgba(210, 254, 216, 0.6)", "rgba(255, 252, 214, 0.6)", "rgba(254, 218, 255, 0.3)"],
+                hoverBackgroundColor: ["#D8EDFF", "#D2FED8", "#FFFCD6", "#FEDAFF"]
+            }]
+        },
+        options: {
+            scales: {
+                xAxes: [{
+                    stacked: true
+                }],
+                yAxes: [{
+                    stacked: true
+                }]
+            },
+            legend: {
+                display: false
+            },
+            layout: {
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 30,
+                    bottom: 0
+                }
+            }
+        }
+    })
+</script>
+
+</html>
